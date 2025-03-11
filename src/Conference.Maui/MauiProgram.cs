@@ -49,6 +49,9 @@ public static class MauiProgram
         builder.Services.AddTransient<MyAgendaViewModel>();
         builder.Services.AddTransient<MyAgendaPage>();
 
+        builder.Services.AddTransient<PickFavoriteSessionsViewModel>();
+        builder.Services.AddTransient<PickFavoriteSessionsPage>();
+
 #if DEBUG
         builder.Logging.AddDebug();
 #endif
